@@ -277,7 +277,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, #1e7a46 0%, #1e7a46 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -292,7 +292,7 @@ header .intro-text {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #5ca9fb;
+  color: #1e7a46;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;

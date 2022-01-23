@@ -351,15 +351,15 @@ header .intro-text {
 #services .service-desc {
   margin-bottom: 40px;
 }
-/* Portfolio Section */
-#portfolio {
+/* gallery Section */
+#gallery {
   padding: 100px 0;
 }
-.portfolio-item {
+.gallery-item {
   margin: 1px -15px 0 -14px;
   padding: 0;
 }
-.portfolio-item .hover-bg {
+.gallery-item .hover-bg {
   overflow: hidden;
   position: relative;
   margin: 0;
@@ -371,8 +371,10 @@ header .intro-text {
   color: #fff;
   background: linear-gradient(
     to right,
-    rgba(99, 114, 255, 0.8) 0%,
-    rgba(92, 169, 251, 0.8) 100%
+    /* rgba(99, 114, 255, 0.8) 0%,
+    rgba(92, 169, 251, 0.8) 100% */
+    rgba(55, 168, 106, 0.8) 0%,
+    rgba(54, 80, 63, 0.8) 100%
   );
   padding: 30% 0 0;
   height: 100%;

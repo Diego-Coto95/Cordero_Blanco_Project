@@ -247,6 +247,9 @@ header .intro-text {
 }
 /* Features Section */
 #features {
+  padding: 100px 0;
+}
+#features {
   background: #f6f6f6;
 }
 #features i.fa {
@@ -442,6 +445,108 @@ header .intro-text {
   font-weight: 600;
   color: #666;
 }
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing {
+  padding: 100px 0;
+}
+.pricing .box {
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  background: #fefefe;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+}
+.pricing .box h3 {
+  font-weight: 400;
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+}
+.pricing .box h4 {
+  font-size: 42px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+.pricing .box h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+.pricing .box h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+.pricing .box ul {
+  padding: 0;
+  list-style: none;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+.pricing .box ul li {
+  padding-bottom: 16px;
+}
+.pricing .box ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+.pricing .box .btn-wrap {
+  padding: 15px;
+  text-align: center;
+}
+.pricing .box .btn-buy {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  border: 2px solid #ffffff;
+}
+.pricing .box .btn-buy:hover {
+  background: #372300;
+  color: #fff;
+}
+.pricing #featured {
+  background: #372300;
+}
+.pricing .box {
+  background: #1e7a46;
+}
+.pricing .box h3, .pricing .featured h4, .pricing .featured h4 span, .pricing .featured ul, .pricing .featured ul .na {
+  color: #fff;
+}
+.pricing .featured h3, .pricing .featured h4, .pricing .featured h4 span, .pricing .featured ul, .pricing .featured ul .na {
+  color: #fff;
+}
+.pricing .featured .btn-wrap {
+  padding: 15px;
+  text-align: center;
+}
+.pricing .featured .btn-buy {
+  color: #fff;
+  border: 2px solid #fff;
+}
+.pricing .featured .btn-buy:hover {
+  background: #1e7a46;
+  color: #ffffff;
+}
+
+
 /* Team Section */
 #team {
   padding: 100px 0;

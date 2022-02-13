@@ -134,6 +134,8 @@ export const Contact = (props) => {
           </p>
         </div>
       </div>
+      
     </div>
+    
   )
 }

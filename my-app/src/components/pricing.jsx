@@ -39,7 +39,7 @@ export const Pricing = (props) => {
         <div className="row">
 
           <div className="col-lg-4 col-md-6" data-aos="zoom-im" data-aos-delay="100">
-            <div className="box">
+            <div className="box" id="gallery-box">
               <h3>Small</h3>
               <h4><sup>$</sup>1.25</h4>
               <ul>
@@ -73,7 +73,7 @@ export const Pricing = (props) => {
           </div>
 
           <div className="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
-            <div className="box">
+            <div className="box" id="gallery-box">
               <h3>Medium</h3>
               <h4><sup>$</sup>5</h4>
               <ul>

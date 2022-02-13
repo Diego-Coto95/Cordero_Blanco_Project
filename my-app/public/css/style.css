@@ -70,6 +70,9 @@ hr {
   margin-bottom: 20px;
   border: 0;
 }
+
+
+
 /* Navigation */
 #menu {
   padding: 15px;
@@ -305,8 +308,10 @@ header .intro-text {
   margin-top: 10px;
   background: #fff;
   border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0 0 50px rgba(0, 0, 0, 0.06); */
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
 }
+
 #about p {
   line-height: 24px;
   margin: 30px 0;
@@ -358,6 +363,10 @@ header .intro-text {
 #gallery {
   padding: 100px 0;
 }
+#gallery-box{
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
 .gallery-item {
   margin: 1px -15px 0 -14px;
   padding: 0;
@@ -523,6 +532,7 @@ header .intro-text {
 }
 .pricing #featured {
   background: #372300;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .pricing .box {
   background: #1e7a46;
@@ -709,6 +719,6 @@ label {
 
 @media (max-width: 768px) {
   #about img {
-    margin: 50px 0;
+    margin: 50px 0;fea
   }
 }

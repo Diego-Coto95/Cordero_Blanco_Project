@@ -21,7 +21,7 @@ export const About = (props) => {
       });
     }
     if(!inView){
-      animation.start({x:'100vw'})
+      animation.start({x:'-100vw'})
     }
   }, [inView]);
 

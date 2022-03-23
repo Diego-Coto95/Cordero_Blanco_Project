@@ -1,17 +1,42 @@
 import { Image } from "./image";
+import { motion } from "framer-motion";
+import {useInView} from 'react-intersection-observer';
+import { useEffect, useRef, useState } from "react";
+import { useAnimation } from "framer-motion";
+
 
 export const Gallery = (props) => {
+
+  const {ref, inView} = useInView({
+    threshold: 0.2
+  });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        x: 0,
+        transition: {
+          type: 'spring', duration:1, bounce: 0.0
+        }
+      });
+    }
+    if(!inView){
+      animation.start({x:'-100vw'})
+    }
+  }, [inView]);
+
   return (
     <div id='gallery' className='text-center'>
-      <div className='container'>
+      <div ref={ref} className='container'>
         <div className='section-title'>
-          <h2>Gallery</h2>
+          <motion.h2 animate={animation}>Gallery</motion.h2>
           <p>
             Our high quality product is harvested directly from Costa Rican mountains, with 
             a traditional and autochthonous flavor.
           </p>
         </div>
-        <div className='row' id="gallery-box">
+        <div className='row' id="gallery-box" animate={animation}>
           <div className='gallery-items' >
             {props.data
               ? props.data.map((d, i) => (
@@ -25,4 +50,6 @@ export const Gallery = (props) => {
       </div>
     </div>
   )
+
+
 }

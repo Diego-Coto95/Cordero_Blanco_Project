@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 export const Header = (props) => {
   return (
     <header id='header'>
@@ -12,18 +11,12 @@ export const Header = (props) => {
                   <span></span>
                 </h1>
                 <p>{props.data ? props.data.paragraph : 'Loading'}</p>
-                <motion.a
-                  whileHover={{ scale: 1.2, rotate: 90 }}
-                  whileTap={{
-                    scale: 0.8,
-                    rotate: -90,
-                    borderRadius: "100%"
-                  }}
+                <a
                   href='#features'
                   className='btn btn-custom btn-lg page-scroll'
                 >
                   Learn More
-                </motion.a>{' '}
+                </a>{' '}
               </div>
             </div>
           </div>

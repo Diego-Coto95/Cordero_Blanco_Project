@@ -4,18 +4,14 @@
     "paragraph": "A high quality coffee, with the essence of the Costa Rican mountain."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "The name Cordero Blanco comes from the combination of surnames of a peasant family from San Gerardo de Tarrazú who were 14 siblings led by Luis Cordero and Esther Blanco. This family grew up in a peasant environment where apart from coffee other activities were developed such as the production of candy (cane), cattle, beans, corn, and achiote charcoal, among others. The activities were abundant and the work seemed never to end in a family that fought tirelessly and that hoped through effort to get ahead and grow despite the adversities that health and life showed over the years. After a few years, coffee became the favorite crop not only for the Cordero Blanco family, but also for the Zona de los Santos who were already receiving the first colones thanks to its sale and commercialization that began to take place in the mid-19th century seem successful in the Central Valley of Costa Rica. This is how the culture of coffee was installed until today leaving large plots of land planted with different varieties and different types of soil.",
     "Why": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "High quality product",
+      "Affordable prices"
     ],
     "Why2": [
-      "5",
-      "6",
-      "7",
-      "8"
+      "Growing family business",
+      "The natural wealth of the crop"
     ]
   },
   "Gallery": [
@@ -75,11 +71,6 @@
       "title": "Cordero Blanco Coffee",
       "largeImage": "img/product/1.jpg",
       "smallImage": "img/product/1.jpg"
-    },
-    {
-      "title": "Cordero Blanco Coffee",
-      "largeImage": "img/product/1.jpg",
-      "smallImage": "img/product/1.jpg"
     }
   ],
   "Team": [
@@ -105,33 +96,33 @@
     }
   ],
   "Contact": {
-    "address": "",
-    "phone": "",
-    "email": "",
-    "facebook": "",
-    "twitter": "",
-    "instagram": ""
+    "address": "Costa Rica, San José, Tarrazu, San Carlos 10502",
+    "phone": "+506 88888888",
+    "email": "cordero_blanco@gmail.com",
+    "facebook": "https://es-la.facebook.com/",
+    "instagram": "https://www.instagram.com/",
+    "youtube": "https://www.youtube.com/?hl=es&gl=CR"
   },
   "Features": [
     {
       "icon": "fa fa-line-chart",
       "title": "Mission",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "text": "Offer a quality product based on coffee that allows the consumer to taste the quality raw material of Tarrazú origin."
     },
     {
       "icon": "fa fa-bullhorn",
       "title": "Vision",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "text": "We see ourselves in time, creating products and services worldwide, establishing new markets and contributing to the local and foreign job opportunity."
     },
     {
       "icon": "fa fa-group",
       "title": "Values",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "text": "Our values are distinguished by quality, responsibility, teamwork and commitment to our work."
     },
     {
       "icon": "fa fa-star-o",
       "title": "Main Goal",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "text": "Work hard to achieve high global standards and hand in hand with a responsible sense of socio-cultural well-being."
     }
   ]
 }

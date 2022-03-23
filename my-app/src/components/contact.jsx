@@ -1,5 +1,9 @@
-import { useState } from 'react'
-import emailjs from 'emailjs-com'
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { motion } from "framer-motion";
+import {useInView} from 'react-intersection-observer';
+import { useEffect } from "react";
+import { useAnimation } from "framer-motion";
 
 const initialState = {
   name: '',
@@ -7,6 +11,27 @@ const initialState = {
   message: '',
 }
 export const Contact = (props) => {
+
+  const {ref, inView} = useInView({
+    threshold: 0.2
+  });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        x: 0,
+        transition: {
+          type: 'spring', duration:1, bounce: 0.0
+        }
+      });
+    }
+    if(!inView){
+      animation.start({x:'-100vw'})
+    }
+  }, [inView]);
+
+
   const [{ name, email, message }, setState] = useState(initialState)
 
   const handleChange = (e) => {
@@ -33,13 +58,14 @@ export const Contact = (props) => {
       )
   }
   return (
+    
     <div>
       <div id='contact'>
-        <div className='container'>
+        <div ref={ref} className='container'>
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>Get In Touch</h2>
+                <motion.h2 animate={animation}>Get In Touch</motion.h2>
                 <p>
                   Please fill out the form below to send us an email and we will
                   get back to you as soon as possible.
@@ -120,6 +146,29 @@ export const Contact = (props) => {
                 </span>{' '}
                 {props.data ? props.data.email : 'loading'}
               </p>
+            </div>
+          </div>
+          <div className='col-md-12'>
+            <div className='row'>
+              <div className='social'>
+                <ul>
+                  <li>
+                    <a href={props.data ? props.data.facebook : '/' } target="_blank">
+                      <i className='fa fa-facebook'></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={props.data ? props.data.instagram : '/'} target="_blank">
+                      <i className='fa fa-instagram'></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={props.data ? props.data.youtube : '/'} target="_blank">
+                      <i className='fa fa-youtube'></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

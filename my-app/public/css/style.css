@@ -414,6 +414,15 @@ header .intro-text {
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
+/*Product*/
+#product {
+  padding: 100px 0;
+}
+#product-box{
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+}
+/**/
 /* Testimonials Section */
 #testimonials {
   padding: 100px 0;
@@ -698,8 +707,8 @@ label {
   transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-  color: #608dfd;
-  background: #fff;
+  color: #fff;
+  background: #372300;
 }
 /* Footer Section*/
 #footer {
@@ -719,6 +728,6 @@ label {
 
 @media (max-width: 768px) {
   #about img {
-    margin: 50px 0;fea
+    margin: 50px 0;
   }
 }
